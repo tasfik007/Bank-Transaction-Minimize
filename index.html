@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CFM Visualizer</title>
+    <link rel="icon" href="money-bill-wave-solid.svg" type="image/icon type">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <script src="https://kit.fontawesome.com/5548f5ed00.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="heap.js"></script>
+    <script src="script.js" type="module"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-dark "
+        style="font-size: 25px; font-family: sans-serif; background-color: whitesmoke; color: white;">
+
+
+        Cash Flow Minimization Visualizer
+        <small>by Tasfik</small>
+
+    </nav>
+    <div id="container">
+        <div id="mynetwork"></div>
+        <div id="container2">
+            <span id="temptext" style="width: 100%; text-align: center; font-size: x-large">
+                <h4>Click 'Solve The Problem Button' to minimize transactions</h4>
+            </span>
+            <div id="mynetwork2" style="display: none"></div>
+        </div>
+    </div>
+
+    <div>
+        <br>
+        <button type="button" class="btn btn-danger my-btn" id="generate-graph">Get New Problem</button>
+        <br>
+        <button type="button" class="btn btn-success my-btn" id="solve">Minimize Transactions</button>
+    </div>
+</body>
+
+</html>
