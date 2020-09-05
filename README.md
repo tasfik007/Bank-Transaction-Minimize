@@ -1,2 +1,3 @@
-# CBFriendsCost
-CB Project
+# Bank Transaction Minimization Visualizer
+### With Cash Flow Minimazation Algorithm
+
